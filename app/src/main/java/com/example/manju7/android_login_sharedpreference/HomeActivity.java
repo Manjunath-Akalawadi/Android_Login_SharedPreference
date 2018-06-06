@@ -17,15 +17,8 @@ public class HomeActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        textView=(TextView)findViewById(R.id.hi);
 
         logout=(Button)findViewById(R.id.logout);
-
-
-        Intent intent=getIntent();
-        String str=intent.getStringExtra("message");
-        textView.setText(str);
-
 
         logout.setOnClickListener(new View.OnClickListener() {
             @Override

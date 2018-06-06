@@ -28,12 +28,10 @@ public class MainActivity extends Activity {
         button=(Button) findViewById(R.id.login);
 
         sp=getSharedPreferences("login",MODE_PRIVATE);
-        String str=username.getText().toString();
         if(sp.contains("username") && sp.contains("password")){
             finish();   //finish current activity
 
             Intent intent = new Intent(MainActivity.this, HomeActivity.class);
-            intent.putExtra("message", str);
             startActivity(intent);
         }
 
