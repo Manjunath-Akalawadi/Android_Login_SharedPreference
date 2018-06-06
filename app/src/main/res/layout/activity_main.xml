@@ -8,8 +8,7 @@
     android:paddingTop="15dp"
     android:paddingBottom="15dp" tools:context=".MainActivity"
     android:orientation="vertical"
-    android:background="@drawable/backgroundcolor"
-    >
+    android:background="@drawable/backgroundcolor">
 
     <TextView
         android:layout_width="match_parent"
