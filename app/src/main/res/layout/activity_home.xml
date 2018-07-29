@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="213dp"
+        android:layout_marginTop="88dp"
         android:gravity="center"
         android:text="-- Welcome --"
         android:textSize="30dp" />
@@ -31,5 +31,15 @@
         android:layout_marginBottom="63dp"
         android:text="Logout"
         android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"
+        android:text="TextView"
+        android:textSize="40dp" />
 
 </RelativeLayout>

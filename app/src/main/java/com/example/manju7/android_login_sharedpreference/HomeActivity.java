@@ -17,6 +17,13 @@ public class HomeActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        textView=(TextView)findViewById(R.id.textView1);
+
+        Intent intent = getIntent();
+        String result = intent.getStringExtra("MY_KEY");
+        textView.setText(result);
+
+
         logout=(Button)findViewById(R.id.logout);
 
         logout.setOnClickListener(new View.OnClickListener() {
@@ -31,5 +38,7 @@ public class HomeActivity extends Activity {
                 finish();   //finish current activity
             }
         });
+
+
     }
 }

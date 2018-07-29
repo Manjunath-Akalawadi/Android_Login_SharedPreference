@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -28,11 +27,17 @@ public class MainActivity extends Activity {
         button=(Button) findViewById(R.id.login);
 
         sp=getSharedPreferences("login",MODE_PRIVATE);
+
+
+
         if(sp.contains("username") && sp.contains("password")){
             finish();   //finish current activity
 
             Intent intent = new Intent(MainActivity.this, HomeActivity.class);
             startActivity(intent);
+
+
+
         }
 
         button.setOnClickListener(new View.OnClickListener() {
@@ -41,6 +46,8 @@ public class MainActivity extends Activity {
                 loginCheck();
             }
         });
+
+
 
 
     }
